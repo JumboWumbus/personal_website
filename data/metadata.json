@@ -1,0 +1,222 @@
+[
+  {
+    "title": "Having your own website is cool and good, here's why",
+    "publishedAt": "2026-03-17T08:09:14.745Z",
+    "summary": "The thoughts and reasons behind why owning and maintaining a website yourself is a good idea.",
+    "tags": [
+      "blog",
+      "content",
+      "personal",
+      "website"
+    ],
+    "slug": "hurry-up-and-make-a-website",
+    "url": "/blog/post/hurry-up-and-make-a-website",
+    "section": "blog",
+    "minutes": 10,
+    "headings": [
+      {
+        "text": "The BIG issue",
+        "id": "the-big-issue",
+        "level": 1
+      },
+      {
+        "text": "Your own website",
+        "id": "your-own-website",
+        "level": 2
+      },
+      {
+        "text": "Some questions I wanted answered",
+        "id": "some-questions-i-wanted-answered",
+        "level": 3
+      },
+      {
+        "text": "Personal archive",
+        "id": "personal-archive",
+        "level": 3
+      },
+      {
+        "text": "Self-reliance",
+        "id": "self-reliance",
+        "level": 3
+      },
+      {
+        "text": "Created with you in mind",
+        "id": "created-with-you-in-mind",
+        "level": 3
+      },
+      {
+        "text": "Milestones and progress",
+        "id": "milestones-and-progress",
+        "level": 3
+      },
+      {
+        "text": "Accountability",
+        "id": "accountability",
+        "level": 3
+      },
+      {
+        "text": "Freedom of speech and expression",
+        "id": "freedom-of-speech-and-expression",
+        "level": 3
+      },
+      {
+        "text": "Middle out",
+        "id": "middle-out",
+        "level": 3
+      },
+      {
+        "text": "Goals for my website",
+        "id": "goals-for-my-website",
+        "level": 2
+      },
+      {
+        "text": "Closing thinks",
+        "id": "closing-thinks",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "title": "Road to net zero project",
+    "publishedAt": "2026-03-17T08:09:14.780Z",
+    "summary": "Microsite web development project.",
+    "tags": [
+      "project",
+      "webdev",
+      "website",
+      "portfolio"
+    ],
+    "slug": "road-to-net-zero-project",
+    "url": "/projects/post/road-to-net-zero-project",
+    "section": "projects",
+    "minutes": 20,
+    "headings": [
+      {
+        "text": "Project objectives",
+        "id": "project-objectives",
+        "level": 1
+      },
+      {
+        "text": "My role in the project",
+        "id": "my-role-in-the-project",
+        "level": 1
+      },
+      {
+        "text": "Technologies used",
+        "id": "technologies-used",
+        "level": 1
+      },
+      {
+        "text": "Front-end",
+        "id": "front-end",
+        "level": 2
+      },
+      {
+        "text": "Back-end",
+        "id": "back-end",
+        "level": 2
+      },
+      {
+        "text": "Others",
+        "id": "others",
+        "level": 2
+      },
+      {
+        "text": "Design and development",
+        "id": "design-and-development",
+        "level": 1
+      },
+      {
+        "text": "Design",
+        "id": "design",
+        "level": 2
+      },
+      {
+        "text": "Visual design",
+        "id": "visual-design",
+        "level": 3
+      },
+      {
+        "text": "Logo",
+        "id": "logo",
+        "level": 4
+      },
+      {
+        "text": "Language",
+        "id": "language",
+        "level": 4
+      },
+      {
+        "text": "Layout and flow",
+        "id": "layout-and-flow",
+        "level": 4
+      },
+      {
+        "text": "Development",
+        "id": "development",
+        "level": 2
+      },
+      {
+        "text": "Front-end",
+        "id": "front-end",
+        "level": 3
+      },
+      {
+        "text": "React",
+        "id": "react",
+        "level": 4
+      },
+      {
+        "text": "Animations",
+        "id": "animations",
+        "level": 4
+      },
+      {
+        "text": "Styling",
+        "id": "styling",
+        "level": 4
+      },
+      {
+        "text": "SCSS",
+        "id": "scss",
+        "level": 5
+      },
+      {
+        "text": "Extra stuff",
+        "id": "extra-stuff",
+        "level": 4
+      },
+      {
+        "text": "Lessons learned",
+        "id": "lessons-learned",
+        "level": 2
+      },
+      {
+        "text": "Conclusion",
+        "id": "conclusion",
+        "level": 2
+      }
+    ]
+  },
+  {
+    "title": "Good",
+    "publishedAt": "08/09/2020",
+    "summary": "JJust a good postJust a good postJust a good postJust a good postJust a good postJust a good postJust a good postust a good post",
+    "tags": [
+      "part",
+      "gegg",
+      "pie"
+    ],
+    "slug": "beg",
+    "url": "/tiny-tips/post/beg",
+    "section": "tiny-tips",
+    "minutes": 0,
+    "headings": [
+      {
+        "text": "Eating berries",
+        "id": "eating-berries",
+        "level": 1
+      }
+    ]
+  }
+]
