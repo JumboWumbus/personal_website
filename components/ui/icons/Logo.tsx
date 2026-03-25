@@ -1,5 +1,5 @@
 import * as React from "react";
-const TypeLogo = (props: any) => (
+const TypeLogo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={334.707}

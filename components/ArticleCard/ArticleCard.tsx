@@ -1,7 +1,6 @@
 "use client";
 import {
   Card,
-  CardHeader,
   CardDescription,
   CardTitle,
   CardContent,
@@ -10,8 +9,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 
 import {
-  BsCalendar4Event,
-  BsEye,
   BsClock,
   BsCalendar4Week,
 } from "react-icons/bs";
@@ -25,7 +22,7 @@ interface ArticleCardProps {
   lastCardRule?: string;
 }
 
-export default function ArticleCard({ post, className, lastCardRule }: ArticleCardProps) {
+export default function ArticleCard({ post, className }: ArticleCardProps) {
   const handleChildClick = (event: React.MouseEvent<HTMLElement>) => {
     event.stopPropagation();
   };

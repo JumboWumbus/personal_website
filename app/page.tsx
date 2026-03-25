@@ -6,7 +6,6 @@ import face3 from "../public/faces/BenThreshold_3.png";
 import face4 from "../public/faces/BenThreshold_4.png";
 import face5 from "../public/faces/BenThreshold_5.png";
 import face6 from "../public/faces/BenThreshold_6.png";
-import ArticleCard from "@/components/ArticleCard/ArticleCard";
 import metadata from "@/data/metadata.json"
 import BlogList from "@/components/BlogList/BlogList";
 
@@ -15,7 +14,6 @@ const faces = [face1, face2, face3, face4, face5, face6];
 //TODO: Style hero text to shrink on smaller screens
 //TODO: Generate single file from mdx metadata to use instead of getPosts() for performance
 export default async function Home() {
-  const postMetadata = metadata;
   return (
     <>
       <div className="flex flex-col min-[860px]:flex-row min-[860px]:items-end w-full">
