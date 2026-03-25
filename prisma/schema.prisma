@@ -1,13 +1,23 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
-// Get a free hosted Postgres database in seconds: `npx create-db`
+// Prisma schema for bensden.xyz
+// Database: Neon (serverless PostgreSQL) — https://neon.tech
+// Connect via Vercel integration: https://vercel.com/integrations/neon
+// Set DATABASE_URL in .env.local after connecting
 
 generator client {
-  provider = "prisma-client"
-  output   = "../generated/prisma"
+  provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "postgresql"
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DATABASE_URL_UNPOOLED")
 }
+
+// ─── Future models go here ───────────────────────────────────────────────────
+// Phase 4 (GitHub comments via giscus) will not need a DB model —
+// comments live in GitHub Discussions.
+//
+// Add models here when you need to store:
+//   - User sessions / IndieAuth tokens
+//   - Cached webmention counts (if you want persistent analytics)
+//   - Any server-side state

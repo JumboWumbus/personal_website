@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
 import plugin from "tailwindcss/plugin";
+import type { PluginUtils } from "tailwindcss/types/config";
 
 const hexToRgb = (hex: string) => {
   hex = hex.replace("#", "");
@@ -31,7 +32,7 @@ const config: Config = {
         mdp: "900px",
         "3xl": "1800px",
       },
-      typography: ({ theme }) => ({
+      typography: ({ theme }: PluginUtils) => ({
         animated: {
           css: {
             // Heading container

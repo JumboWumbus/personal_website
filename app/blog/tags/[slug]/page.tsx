@@ -1,5 +1,5 @@
 import BlogList from "@/components/BlogList/BlogList";
-import { getMetadata } from "@/utils/Metadata/getMetadata";
+import metadata from "@/data/metadata.json"
 import { PostMetadata } from "@/utils/types";
 import { notFound } from "next/navigation";
 
@@ -13,7 +13,6 @@ export default async function BlogTagPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const metadata = await getMetadata();
   const filteredPosts = filterPostsByTag(slug, metadata);
 
   if (filteredPosts.length === 0) {

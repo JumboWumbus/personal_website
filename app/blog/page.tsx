@@ -29,7 +29,7 @@ export default function BlogPage() {
     return counts
   }, [filteredPosts])
   return (
-    <>
+    <div className="h-feed">
       <aside>
         <TagCombobox
           tagCounts={tagCounts}
@@ -42,6 +42,6 @@ export default function BlogPage() {
         description="Welcome to the blog section"
         postList={filteredPosts}
       />
-    </>
+    </div>
   );
 }

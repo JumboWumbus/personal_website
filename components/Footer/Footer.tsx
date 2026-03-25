@@ -15,13 +15,13 @@ export default function Footer() {
             <Link href="mailto:benhammond404@gmail.com">
               <FaEnvelope className="fill-foreground h-5 w-min" />
             </Link>
-            <Link href="https://github.com/JumboWumbus">
+            <Link href="https://github.com/JumboWumbus" rel="me">
               <FaGithub className="fill-foreground h-5 w-min" />
             </Link>
-            <Link href="https://www.twitter.com/GrembloProjects">
+            <Link href="https://www.twitter.com/GrembloProjects" rel="me">
               <FaTwitter className="fill-foreground h-5 w-min" />
             </Link>
-            <Link href="https://www.linkedin.com/in/benhammond404/">
+            <Link href="https://www.linkedin.com/in/benhammond404/" rel="me">
               <FaLinkedin className="fill-foreground h-5 w-min" />
             </Link>
           </div>
