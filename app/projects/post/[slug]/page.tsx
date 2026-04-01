@@ -69,7 +69,7 @@ export default async function BlogPost({
 
 export async function generateStaticParams() {
   return allMetadata
-    .filter((post) => post.section === "blog")
+    .filter((post) => post.section === "project")
     .map((post) => ({ slug: post.slug }));
 }
 
