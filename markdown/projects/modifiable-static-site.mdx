@@ -1,0 +1,92 @@
+---
+author: Ben Hammond
+title: Modifiable static site
+date: 02/03/2024
+description: A stylized, single page applictation that can be edited easily.
+excerpt: Creating a website for an art project.
+summary: Website to promote an upcoming art project.
+
+section: project
+
+tags: ['project', 'website', 'portfolio']
+category: portfolio
+headingDepth: 3
+---
+
+A stylized, single page web app that can be updated and edited easily.
+An easily modifiable website to promote an upcoming popup art project; designed for non-technical owners. 
+
+During my time freelance developing I ended up working with independent artists and creatives. It was always interesting to hear about how they work and what processes they have when creating.
+
+I was approached by a team of designers and artists to help create a one page website for an upcoming art project that had been anticipated for quite some time.
+
+To my pleasant surprise the team before the conversation even started; already had a mockup and strong idea of how they wanted the website to look and function so I was able to jump straight into development!
+
+## The project
+
+The projects main overarching goal was to promote and attract interest to the project and artists involved. Since the website is an extension of their creative vision; it was important that the website reflected their attention to detail and care.
+### Requirements 
+- A single page website with a very specific theme and aesthetic; mostly black with white highlights.
+- The team wanted something eye catching at the start with not too much information to entice users to explore and learn more about the art project.
+- The page should be easily edited to reflect updates, changes and information about the project.
+- Direct users to social media and increase following.
+
+### Pixel perfect design
+
+I used nextJS and SASS for front end; I had strict rules to follow regarding layout and structure. I was following a mock up down to the pixel and although I prefer using it; I felt that tailwindCSS at the time did not provide enough granular control to achieve this. So I built a small atomic design component system with global SCSS variables that would allow me to fine tune spacing, rounding, margin, padding etc.
+
+### Modifying content
+
+I discussed with the team if they would like to be able to login to an admin dashboard and author changes to the website that way. They thought that would be too complex and over engineered and opted for my other suggestion which was replacing the prose on the site with variables from a centralized file. 
+
+This sparked more discussion regarding dynamic vs static and although the website is light and responsive, they planned on hosting the website on something that was small and inexpensive so having most of the text on the website be fetched on page load was not the best option.
+
+After showing them how github works; We settled on a file that can me modified (sort of like a markdown document) and when the website is built; the data will be pulled from that file and used to create the static page. This allowed for a fully static website with content that can be edited and published.
+
+It's not a groundbreaking or impressive idea or solution but if it works; it works!
+
+### Building excitement
+
+Funnily enough it's actually quite difficult to build a following with just a website alone; the chances of someone randomly stumbling upon your website without any sort of external push is quite rare.
+
+Luckily the team already had a following of around 6000 on twitter which would hopefully increase steadily as word and interest spread.
+
+Measuring a change in popularity is also quite difficult unless you have numbers and data. I wanted to make it clear to the team that data collection can be as complicated or as simple as they wanted it to be. They didn't want to know what device users were accessing their website on, nor did they want to know what they were clicking on or how long they spent on the page. This meant a minimal page analytics setup.
+
+I had experience using Google Analytics but it's notorious for bloating web pages and I really wanted to keep this page simple and streamlined. At the time I was working on this, Google was phasing out the use of Universal Analytics and introducing Analytics 4. This change would not have been too bad if it weren't for the lack of documentation regarding the new system and the overwhelming amount of information using the old system that would show up upon searching online. On top of that; from what I could see, a minimal analytics setup with GA4 was even heavier in terms of script size.
+
+Luckily after some digging I found a man doing gods work; developing a [Minimal Google Analytics implementation](https://dariusz.wieckiewicz.org/en/minimal-google-analytics-4-snippet/). Without modification this code will:
+- Count pageviews
+- Get user searches (on the website)
+- Log file downloads on website
+- Count page as read on majority page scroll
+
+I modified the snippet and only collected pageviews and if the user read to the end of the page. All of this in a 3kb GA4 package.
+
+### My creative input
+
+The team was stuck on what to put at the start of the page; a call to action, a video or even just some vague information regarding the project. All of them are good ideas but they asked for my advice and I suggested something that they liked.
+
+All of the page is static in terms of motion, there is not any scroll in animations or hover effects and that was by design; the page was supposed to feel like a poster. I saw that one of the team members had a skull banner in their profile and I asked if they had it in SVG. They did and I got to work on making a subtly animated version using after effects and lottie files.
+
+Lottie files is a thing that allows you to animate SVGs and export them as a much smaller; more robust vector animation file. I enjoy using it whenever I get the chance as it can add a little bit of sparkle to a layout that it wouldn't otherwise have.
+
+The team enjoyed the first draft and after some back and forth, we dialed in the animation.
+
+
+## Outcome
+
+After the website was published over the course, of 2 weeks after release we saw that over 12,000 people had visited the website and had a look at the project. The projects twitter following went from 6000 to 8000 in that time also and the team could not be more excited!
+
+I got to see firsthand the content editor in action as one of the team members decided to add a date to the calendar for one of the art shows! They pushed the change to the github and after it built the new dates were there.
+
+Visitors seemed to be engaging with the website and content as most visitors also triggered the scroll-page-end analytic which was set to fire if the user scrolled 90% of the way down the page. 
+
+
+## What I learned
+
+Over the course of this project I learned quite a bit in terms of following a shared creative vision; being able to ask questions about design and receive active feedback regarding progress was all a very refreshing and fulfilling process.
+
+Optimizing doesn't always have to be for performance; sometimes you are optimizing for privacy, usability or design. Due to me coming from a games programming perspective background, I always assumed that optimization had to be about CPU load and framerate. This project taught me that optimizations come in all shapes and sizes.
+
+When collaborating with a team, everyone doesn't need to be on the same page, but they all must be willing to communicate. During this project, one of the designers kept using alot of terminology that you would use to describe layout when working with physical print (Above the fold, Bleed, Tracking) and this became somewhat confusing quickly. So we both sat down and translated the terms from print to web and soon we both understood what each other was trying to say.

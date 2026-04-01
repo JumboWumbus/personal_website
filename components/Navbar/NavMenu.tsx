@@ -54,7 +54,7 @@ export default function NavMenu() {
     <NavigationMenu className="col-span-2 md:col-span-3 ml-[2px] justify-start relative order-3 md:order-none   ">
       <NavigationMenuList className="space-x-0">
         <NavigationMenuItem className="">
-          <NavigationMenuTrigger>Getting started</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Blog zone</NavigationMenuTrigger>
           <NavigationMenuContent className="">
             <ul className="grid gap-4 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr] ">
               <li className="row-span-3">
@@ -64,19 +64,18 @@ export default function NavMenu() {
                     href="/"
                   >
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      shadcn/ui
+                      Enter the blog zone...
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                      Here I write about whatever; equipment, software, websites, tutorials and new discoveries.
+                      I got a B in English so take from that what you will.
                     </p>
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Introduction">
-                Re-usable components built using Radix UI and Tailwind CSS.
-              </ListItem>
+              <div className="prose select-none">
+                <h1 className="text-lg font-bold">Popular Posts</h1>
+              </div>
               <ListItem href="/docs/installation" title="Installation">
                 How to install dependencies and structure your app.
               </ListItem>

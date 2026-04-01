@@ -18,7 +18,7 @@ const nextConfig: NextConfig = {
   transpilePackages: ["next-mdx-remote"],
   /* config options here */
   // pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
-  pageExtensions: ["tsx", "mdx", "md"],
+  pageExtensions: ["ts", "tsx", "mdx", "md"],
 };
 
 const withMDX = createMDX({

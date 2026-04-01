@@ -10,7 +10,7 @@ export interface Heading {
 
 export default function TableOfContents({
   headings,
-  headingDepth,
+  headingDepth, //The maximum level of heading depth to show on the TOC
 }: {
   headings: Heading[];
   headingDepth: number;

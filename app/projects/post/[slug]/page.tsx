@@ -1,10 +1,10 @@
+
 import allMetadata from "@/data/metadata.json"
 import Link from "next/link"
 import { BsClock, BsCalendar4Week } from "react-icons/bs"
 import { Badge } from "@/components/ui/badge"
 import Webmentions from "@/components/Webmentions/Webmentions"
 import GiscusComments from "@/components/Giscus/Comments"
-import ViewCounter from "@/components/ViewCounter/ViewCounter"
 
 export default async function BlogPost({
   params,
@@ -12,7 +12,7 @@ export default async function BlogPost({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const { default: Post } = await import(`@/markdown/blog/${slug}.mdx`);
+  const { default: Post } = await import(`@/markdown/projects/${slug}.mdx`);
 
   const post = allMetadata.find((p) => p.slug === slug)!;
   const postUrl = `https://bensden.xyz${post.url}`;
@@ -43,7 +43,6 @@ export default async function BlogPost({
             <BsClock />
             <span>{post.minutes} min read</span>
           </div>
-          <ViewCounter slug={post.slug} />
         </div>
         <div className="flex flex-wrap gap-2">
           {post.tags.map((tag) => (

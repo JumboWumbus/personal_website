@@ -26,6 +26,12 @@ export default function ArticleCard({ post, className }: ArticleCardProps) {
   const handleChildClick = (event: React.MouseEvent<HTMLElement>) => {
     event.stopPropagation();
   };
+
+  const formattedDate = new Date(post.publishedAt).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  });
   return (
     <WrapperLink className={`${className}`} href={post.url}>
       <Card className="group row-span-4 grid grid-rows-subgrid gap-2 p-4 shadow-none transition-shadow duration-300 hover:shadow-box-hov-lg hover:cursor-pointer">
@@ -40,7 +46,7 @@ export default function ArticleCard({ post, className }: ArticleCardProps) {
         <CardDescription className="row-start-2 flex gap-3">
           <div className="flex items-baseline gap-1">
             <BsCalendar4Week />
-            <span>{post.publishedAt}</span>
+            <span>{formattedDate}</span>
           </div>
           <div className="flex items-center gap-1">
             <BsClock />
@@ -56,7 +62,7 @@ export default function ArticleCard({ post, className }: ArticleCardProps) {
         {/* Footer */}
         <CardFooter className="row-start-4 p-0 flex flex-wrap gap-2">
           {post.tags.map((tag) => (
-            <Link key={tag} onClick={handleChildClick} href="/arse">
+            <Link key={tag} onClick={handleChildClick} href={`/blog/tags/${tag}`}>
               <Badge variant="secondary">{tag}</Badge>
             </Link>
           ))}

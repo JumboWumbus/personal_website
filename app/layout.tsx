@@ -5,6 +5,7 @@ import "./globals.scss";
 // import { NavMenu } from "@/components/Navbar/NavMenu";
 import NavBar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const inter = Inter({ subsets: ["latin"] });
 // const geistSans = localFont({
@@ -53,6 +54,7 @@ export default function RootLayout({
         </div>
         <div className="min-h-screen w-full grid grid-rows-[auto,1fr,auto]">
           <div className="page-container pt-4 pb-8">
+            <SpeedInsights />
             <NavBar />
           </div>
           <main className="page-container">

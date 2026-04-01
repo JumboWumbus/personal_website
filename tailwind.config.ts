@@ -118,7 +118,7 @@ const config: Config = {
             "--tw-prose-links": theme("colors.char[900]"),
             "--tw-prose-bold": theme("colors.char[900]"),
             "--tw-prose-counters": theme("colors.char[500]"),
-            "--tw-prose-bullets": theme("colors.char[300]"),
+            "--tw-prose-bullets": theme("colors.char[700]"),
             "--tw-prose-hr": theme("colors.char[200]"),
             "--tw-prose-quotes": theme("colors.char[900]"),
             "--tw-prose-quote-borders": theme("colors.char[200]"),

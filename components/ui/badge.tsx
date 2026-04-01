@@ -11,7 +11,7 @@ const badgeVariants = cva(
         default:
           "border-transparent bg-primary text-primary-foreground shadow group-hover/badge:bg-primary/80",
         secondary:
-          "border-transparent bg-secondary text-secondary-foreground group-hover/badge:bg-secondary/80",
+          "border-transparent bg-secondary text-secondary-foreground group-hover/badge:bg-muted ",
         destructive:
           "border-transparent bg-destructive text-destructive-foreground shadow group-hover/badge:bg-destructive/80",
         outline: "text-foreground",
@@ -41,9 +41,28 @@ const counterVariants = cva(
   },
 );
 
+
+const hoverEffectVariants = cva(
+  "",
+  {
+    variants: {
+      variant: {
+        default: "",
+        secondary: "rounded-md transition-all duration-200 ease-in-out hover:shadow-border hover:shadow-[0_0_0_3px] hover:scale-105",
+        destructive: "",
+        outline: "",
+
+      },
+    },
+    defaultVariants: {
+      variant: "default"
+    }
+  }
+)
+
 export interface BadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
-    VariantProps<typeof badgeVariants> {}
+  VariantProps<typeof badgeVariants> { }
 
 function Badge({ className, variant, ...props }: BadgeProps) {
   return (
@@ -59,7 +78,7 @@ export interface BadgeCounterProps extends BadgeProps {
 
 function BadgeCounter({ variant, counter, ...props }: BadgeCounterProps) {
   return (
-    <div className="flex group/badge">
+    <div className={cn(hoverEffectVariants({ variant }), "flex group/badge ")}>
       <div
         className={cn(badgeVariants({ variant }), "rounded-r-none pr-1.5")}
         {...props}

@@ -33,7 +33,8 @@ export default async function Home() {
       </div>
       <div>
 
-        <BlogList sidebar={false} title="Hello" description="hi" postList={metadata} />
+        <BlogList className="py-16" sidebar={false} title="Recent Projects" description="Recent projects that will impress you and make you think highly of me" postList={metadata} sectionFilter={["projects"]} />
+        <BlogList sidebar={false} title="Recent Blog posts" description="Recent blog posts that I wrote with my own fat hands" postList={metadata} sectionFilter={["blog"]} />
       </div>
     </>
   );

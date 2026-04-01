@@ -1,88 +1,81 @@
 [
   {
-    "title": "Having your own website is cool and good, here's why",
-    "publishedAt": "2026-03-25T10:10:16.519Z",
-    "summary": "The thoughts and reasons behind why owning and maintaining a website yourself is a good idea.",
+    "title": "Custom keyboards have ruined my life",
+    "publishedAt": "2026-03-16T00:00:00.000Z",
+    "summary": "My exploration of custom keyboards and what I did to get the best experience.",
     "tags": [
-      "blog",
-      "content",
+      "keyboard",
       "personal",
-      "website"
+      "life"
     ],
-    "slug": "hurry-up-and-make-a-website",
-    "url": "/blog/post/hurry-up-and-make-a-website",
+    "slug": "custom-keyboards-have-ruined-my-life",
+    "url": "/blog/post/custom-keyboards-have-ruined-my-life",
     "section": "blog",
-    "minutes": 10,
+    "minutes": 5,
+    "headings": []
+  },
+  {
+    "title": "Modifiable static site",
+    "publishedAt": "2024-03-02T00:00:00.000Z",
+    "summary": "Website to promote an upcoming art project.",
+    "tags": [
+      "project",
+      "website",
+      "portfolio"
+    ],
+    "slug": "modifiable-static-site",
+    "url": "/projects/post/modifiable-static-site",
+    "section": "projects",
+    "minutes": 5,
     "headings": [
       {
-        "text": "The BIG issue",
-        "id": "the-big-issue",
-        "level": 1
-      },
-      {
-        "text": "Your own website",
-        "id": "your-own-website",
+        "text": "The project",
+        "id": "the-project",
         "level": 2
       },
       {
-        "text": "Some questions I wanted answered",
-        "id": "some-questions-i-wanted-answered",
+        "text": "Requirements",
+        "id": "requirements",
         "level": 3
       },
       {
-        "text": "Personal archive",
-        "id": "personal-archive",
+        "text": "Pixel perfect design",
+        "id": "pixel-perfect-design",
         "level": 3
       },
       {
-        "text": "Self-reliance",
-        "id": "self-reliance",
+        "text": "Modifying content",
+        "id": "modifying-content",
         "level": 3
       },
       {
-        "text": "Created with you in mind",
-        "id": "created-with-you-in-mind",
+        "text": "Building excitement",
+        "id": "building-excitement",
         "level": 3
       },
       {
-        "text": "Milestones and progress",
-        "id": "milestones-and-progress",
+        "text": "My creative input",
+        "id": "my-creative-input",
         "level": 3
       },
       {
-        "text": "Accountability",
-        "id": "accountability",
-        "level": 3
-      },
-      {
-        "text": "Freedom of speech and expression",
-        "id": "freedom-of-speech-and-expression",
-        "level": 3
-      },
-      {
-        "text": "Middle out",
-        "id": "middle-out",
-        "level": 3
-      },
-      {
-        "text": "Goals for my website",
-        "id": "goals-for-my-website",
+        "text": "Outcome",
+        "id": "outcome",
         "level": 2
       },
       {
-        "text": "Closing thinks",
-        "id": "closing-thinks",
+        "text": "What I learned",
+        "id": "what-i-learned",
         "level": 2
       }
     ]
   },
   {
     "title": "Road to net zero project",
-    "publishedAt": "2026-03-25T10:10:16.545Z",
+    "publishedAt": "2023-07-07T23:00:00.000Z",
     "summary": "Microsite web development project.",
     "tags": [
       "project",
-      "webdev",
       "website",
       "portfolio"
     ],
@@ -199,24 +192,17 @@
     ]
   },
   {
-    "title": "Good",
-    "publishedAt": "08/09/2020",
-    "summary": "JJust a good postJust a good postJust a good postJust a good postJust a good postJust a good postJust a good postust a good post",
+    "title": "Websites are never ending!",
+    "publishedAt": "2026-04-30T23:00:00.000Z",
+    "summary": "",
     "tags": [
-      "part",
-      "gegg",
-      "pie"
+      "website",
+      "thought"
     ],
-    "slug": "beg",
-    "url": "/tiny-tips/post/beg",
+    "slug": "websites-are-never-ending",
+    "url": "/tiny-tips/post/websites-are-never-ending",
     "section": "tiny-tips",
     "minutes": 0,
-    "headings": [
-      {
-        "text": "Eating berries",
-        "id": "eating-berries",
-        "level": 1
-      }
-    ]
+    "headings": []
   }
 ]

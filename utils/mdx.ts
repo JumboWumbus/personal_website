@@ -23,6 +23,22 @@ const CONTENT_DIRS = ["blog", "projects", "tiny-tips"];
 const BASE_DIR = path.join(process.cwd(), "markdown/");
 const METADATA_FILE = path.join(process.cwd(), "data", "metadata.json");
 
+
+function normalizeDate(date: string | undefined) {
+  if (!date) return new Date().toISOString();
+
+  // Handle DD/MM/YYYY explicitly
+  const parts = date.split("/");
+
+  if (parts.length === 3) {
+    const [day, month, year] = parts;
+    return new Date(Number(year), Number(month) - 1, Number(day)).toISOString();
+  }
+
+  // Fallback (ISO or other valid formats)
+  return new Date(date).toISOString();
+}
+
 // Parse the frontmatter using `gray-matter`
 function parseFrontmatter(fileContent: string): {
   metadata: Metadata;
@@ -33,7 +49,7 @@ function parseFrontmatter(fileContent: string): {
   return {
     metadata: {
       title: data.title ?? "",
-      publishedAt: data.publishedAt || new Date().toISOString(),
+      publishedAt: normalizeDate(data.date),
       summary: data.summary ?? "",
       tags: Array.isArray(data.tags)
         ? data.tags

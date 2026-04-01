@@ -8,16 +8,11 @@ generator client {
 }
 
 datasource db {
-  provider  = "postgresql"
-  url       = env("DATABASE_URL")
-  directUrl = env("DATABASE_URL_UNPOOLED")
+  provider = "postgresql"
 }
 
-// ─── Future models go here ───────────────────────────────────────────────────
-// Phase 4 (GitHub comments via giscus) will not need a DB model —
-// comments live in GitHub Discussions.
-//
-// Add models here when you need to store:
-//   - User sessions / IndieAuth tokens
-//   - Cached webmention counts (if you want persistent analytics)
-//   - Any server-side state
+model PostView {
+  slug      String   @id
+  count     Int      @default(0)
+  updatedAt DateTime @updatedAt
+}
