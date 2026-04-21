@@ -5,6 +5,7 @@ import { BsClock, BsCalendar4Week } from "react-icons/bs"
 import { Badge } from "@/components/ui/badge"
 import Webmentions from "@/components/Webmentions/Webmentions"
 import GiscusComments from "@/components/Giscus/Comments"
+import ViewCounter from "@/components/ViewCounter/ViewCounter"
 
 export default async function BlogPost({
   params,
@@ -43,6 +44,7 @@ export default async function BlogPost({
             <BsClock />
             <span>{post.minutes} min read</span>
           </div>
+          <ViewCounter slug={post.slug} />
         </div>
         <div className="flex flex-wrap gap-2">
           {post.tags.map((tag) => (
