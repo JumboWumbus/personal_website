@@ -33,6 +33,12 @@ const config: Config = {
         "3xl": "1800px",
       },
       typography: ({ theme }: PluginUtils) => ({
+        DEFAULT: {
+          css: {
+
+            "--tw-prose-bullets": theme("colors.char[700]"),
+          },
+        },
         animated: {
           css: {
             // Heading container

@@ -13,8 +13,8 @@ export default function Video({ src, fileType }: VideoProps) {
   const type = FileType[fileType];
 
   return (
-    <div className="relative max-w-full h-0">
-      <video controls className="absolute top-0 left-0 h-full w-full border-0">
+    <div className="relative max-w-full aspect-video">
+      <video controls className="">
         <source src={src} type={type} />
         Your browser does not support the video tag.
       </video>
